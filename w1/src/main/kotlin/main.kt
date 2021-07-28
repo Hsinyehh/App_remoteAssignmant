@@ -1,11 +1,11 @@
 
 open class Human(val name: String, var mana: Boolean){
     open fun attack(){
-        println("$name use first attack")
+        println("$name use first attack!")
     }
     open fun haveMana(){
         if(mana===true){
-            println("$name have mana.")
+            println("$name has mana.")
         }
         else{
             println("$name doesn't have mana.")
@@ -17,7 +17,7 @@ open class Human(val name: String, var mana: Boolean){
 
 class Mage(name: String,mana: Boolean):Human(name,mana){
     override fun attack(){
-        println("$name use Fireball !")
+        println("$name use Fireball!")
     }
 
 }
@@ -31,5 +31,6 @@ fun main(args: Array<String>) {
     mage.attack()
     //Q6
     human.haveMana()
+    mage.haveMana()
 
 }
