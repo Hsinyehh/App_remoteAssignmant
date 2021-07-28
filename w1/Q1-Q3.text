@@ -1,0 +1,48 @@
+Q1.
+a. val id = 9527
+True,  it will be assigned the suitable type as Integer
+
+b. var number : Int = 5.6
+False, Int must be assigned for Integer; however, 5.6 is Float or Double, rather than Integer
+
+c. var title = "Hello Kotlin!"
+True, it will be assigned the suitable type as String
+
+d. val content : String = null
+False,
+Since the value is Null, we must add a question mark such that the variable can hold null.
+It should be revised as below:
+val content : String? = null
+
+e. val number : Double? = 556.6
+True, the variable might be null sometimes, so it’s okay to declare a question mark.
+
+f. var list: List<String>? = listOf(null, null)
+
+Since the value is Null, we must add a question mark such that the variable can hold null.
+It should be revised as below:
+var list: List<String?>?
+
+g. var list: List<String?>? = listOf("Wayne", "Chen")
+True, the variable might be null sometimes, so it’s okay to declare a question mark.
+
+h. list.size
+False, it’s not allowed on a nullable receiver of type List<String?>?.
+
+i. list?.size
+True, it’s allowed on a nullable receiver of type List<String?>?.
+
+
+
+Q2.
+Ans: c
+Because the massage length is 39, it will print “Your grace” based on the length range 1~39
+
+
+Q3.
+Ans:　d
+val array = Array(6) { 1000.0.pow(it) }
+
+It can generate the array with [1000.0.pow(0), 1000.0.pow(1), 1000.0.pow(2), 1000.0.pow(3), 1000.0.pow(4), 1000.0.pow(5)] based on the array index.
+
+
