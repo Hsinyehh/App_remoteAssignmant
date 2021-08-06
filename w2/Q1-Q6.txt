@@ -1,0 +1,78 @@
+1. What is Inheritance? Try to explain in Mandarin.
+
+ANS:
+當子類別(child class)「繼承」母類別(parent class)時，子類別就能夠使用母類別的性質，例如參數 (paramter)、 方法 (method) 。
+
+2. How to split a string in Android? Explain your understanding, and even better to attach
+some sample code.
+
+ANS:
+use “split(subString)”,  the method will return the array of string which is split by substring.
+
+// sample code
+fun main() {
+    val str = "A:B:C"
+    val delim = ":"
+ 
+    val list = str.split(delim)
+ 
+    println(list)    // [A, B, C]
+}
+
+3. What kind of key-value pair collection do we use in Android? Attach a sample code that
+uses for-loop to print each key-value pair.
+3-1  map
+3-2  
+
+//Sample code
+fun main(args: Array<String>)
+{
+    //declaring a map of integer to string
+    val map: Map<Int, String> = mapOf(1 to "Geeks", 2 to "for" , 3 to "Geeks")
+
+    //printing the map
+    for ((k, v) in map) {
+        println("$k : $v")
+    }
+
+}
+
+
+4. What’s the difference between ArrayList and LinkedList? Try to explain in Mandarin.
+ANS:
+兩者都是list interface
+ArrayList是動態宣告矩陣，可以隨意修改長度；適合拿來儲存或取得資料，因為操作資料會影響記憶體儲存(例如刪除某個資料，在其之後的記憶體資料都要往前移動一格)，會消耗較多時間，所以不適合拿來操作(刪除、新增)資料  
+
+LinkedList是雙向鍊接串列(doubly linked list)；適合拿來操作(刪除、新增)資料 
+
+
+5. What are Value Type variables? List out the Value Type variables you know.
+
+ANS:
+The values can be represented via the declared variables; it requires the data type,  which means the variable only holds the certain value based data type. 
+
+Boolean:  True/False
+
+Integer 
+Byte:  -2^7 < x < 2^7
+Short:   -2^15 < x < 2^15
+Int:   -2^31 < x < 2^31
+Long:   -2^63 < x < 2^63
+
+Not Integer
+Float: 小數點數最多可到7位
+Double:  小數點數最多可到16位
+
+String:　字串，可放一連串字母
+
+Char:  只能放單一字母
+
+Array: 矩陣
+
+
+6. What’s the maximum value of Int? If you want to represent integers larger than the limit,
+what should you do instead of using int variables?
+ANS:
+6-1:  2,147,483,647 (2^31 - 1)
+6-2:  I can declare the variable as Long, which can represent less than 9,223,372,036,854,775,807 (2^63- 1)
+
