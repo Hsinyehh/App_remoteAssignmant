@@ -1,0 +1,48 @@
+1. What is Encapsulation? Try to list out the benefits of Encapsulation.
+
+ANS:
+1-1. Encapsulation is a process of hiding internal data (e.g. parameters, method) by wrapping code and data together into a single unit (e.g. class) so that the users can read data but can’t access to data from outside
+
+1-2. Benefits
+Encapsulation prevents users from seeing inside view and manipulating inside data, and it reduces human errors and simplifies the maintenance of applications.
+
+
+2. Try to explain what enum is and why we use them.
+
+ANS:
+2-1.
+Enum is a data type that holds a set of constants; for example, week with Sunday, Monday…
+And it can be added with fields, constructors and methods. 
+2-2.
+Enum provides a type of safety, prevents comparison with constants from other enums, and it won’t allow parsing a constant of a wrong enum to a method that expects an enum type.
+
+
+3. How to use enum in Kotlin? Attach a sample code that uses enum in Kotlin.
+
+ANS:
+Declare “enum” in front of class.
+
+// Sample code
+enum class Direction {
+    NORTH { override fun distanceCalulated() =1}, 
+    SOUTH { override fun distanceCalulated() =2}, 
+    WEST { override fun distanceCalulated() =3}, 
+    EAST { override fun distanceCalulated() =4};
+    abstract fun distanceCalulated(): Int
+}
+
+
+4. What are the differences between LinearLayout and RelativeLayout? Try to explain in
+detail.
+
+ANS:
+LinearLayout:  A viewgroup that aligns children components in a single direction, vertically or horizontally.
+RelativeLayout:  A viewgroup that displays views in relative positions, where the children component can be displayed with relative distance from each other.
+
+5. Try to explain the benefits of ConstraintLayout. Why should you use it?
+
+ANS:
+Compared with Linearlayout and RelativeLayout, ConstraintLayout allows you to build the complex layouts without having to nest View and View Group elements.
+
+
+
