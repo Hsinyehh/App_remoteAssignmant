@@ -1,0 +1,40 @@
+1. What is Polymorphism? Try to explain in Mandarin.
+ANS:
+Polymorphism (多型) 是指為不同資料類型的實體提供統一的介面使用，可以藉由abstract class (抽象類別) 和 interface (介面) 實現。
+
+其中abstract class (抽象類別) 可藉由子類別繼承抽象類別，並重新定義其方法，繼承的子類別也必定屬於該抽象類別；interface (介面)定義可操作所有型態的方法，也就是可以讓不同型態的物件使用該interface的方法
+
+2. Here are the 6 important lifecycle methods of an Activity:
+i. onCreate()
+ii. onStart()
+iii. onResume()
+iv. onPause()
+v. onStop()
+vi. onDestroy()
+Try to explain when they are called during the lifecycle of Activity.
+
+ANS:
+
+i. onCreate() : When the activity is created, you can perform the basic application startup logic here
+
+ii. onStart() : When the activity is in the start state, the app prepares to be visible,  enter the foreground and become interactive. 
+
+iii. onResume() : When the activity enters the foreground and becomes interactive with the user.
+
+iv. onPause() : When  the user is leaving the activity, that is, the activity is no longer at the foreground activity(though it is visible to users), the functionality that doesn’t need to run in the foreground will stop.
+
+v. onStop() : When the activity isn’t visible to the users, it has entered “Stop state”.
+
+vi. onDestroy() : When the activity is finished or the activity is temporarily destroyed due to the configuration change, this is where the lifecycle component can clean up the resources before the activity is destroyed.
+
+
+
+3. What is the Android Jetpack?
+
+ANS:
+The Android Jetpack is a set of libraries to help developers follow the best practice, reduce boilerplate code,  and write code consistently across the versions and devices so that the developers can focus on the code they need.   
+
+4. What is Coroutines? Why do we use it? Try to explain in Mandarin.
+
+ANS:
+Coroutine 是一種讓不同活動非同步執行的設計模式，非同步是指「個別活動可以同時進行，不需要一個等一個，哪個活動執行完成便可優先將結果送出」。在這個非同步執行模式下，程式會定期放棄已佔有的執行資源，並優先讓其他程式可以執行。
